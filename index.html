@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="time-display">00:00</div>
+    <canvas id="timer-canvas" width="300" height="300"></canvas>
+    <div class="time-inputs">
+      <input id="minutes" type="number" placeholder="00" min="0" max="99">
+      <span>:</span>
+      <input id="seconds" type="number" placeholder="00" min="0" max="59">
+    </div>
+    <div class="controls">
+      <button id="start-pause" class="control-button">
+        <svg viewBox="0 0 100 100">
+          <polygon points="30,20 80,50 30,80" fill="none" stroke="black" stroke-width="4"></polygon>
+        </svg>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

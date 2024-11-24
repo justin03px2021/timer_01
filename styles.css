@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white; /* Pure white background */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #time-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  canvas {
+    margin: 20px 0;
+  }
+  
+  .time-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .time-inputs input {
+    width: 80px; /* Adequate width */
+    height: 60px; /* Fixed height */
+    text-align: center; /* Horizontally align numbers */
+    font-size: 28px; /* Larger font size */
+    border: none; /* Removed border */
+    border-radius: 5px; /* Optional rounded corners */
+    background-color: transparent; /* Transparent background */
+    box-sizing: border-box;
+  
+    /* Remove arrows for all browsers */
+    appearance: none; 
+    -webkit-appearance: none; /* Chrome/Safari */
+    -moz-appearance: textfield; /* Firefox */
+    padding: 0; /* Reset padding */
+    line-height: 60px; /* Vertically align numbers */
+  }
+  
+  .time-inputs span {
+    font-size: 28px; /* Font size matching inputs */
+    align-self: center;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .control-button {
+    width: 100px; /* Enlarged button size */
+    height: 100px;
+    background-color: transparent; /* No background */
+    border: none; /* Remove button outline */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none !important; /* Remove focus outline */
+  }
+  
+  .control-button svg {
+    width: 70px; /* Enlarged SVG size */
+    height: 70px;
+  }
+  
+  .control-button svg polygon {
+    fill: none;
+    stroke: black;
+    stroke-width: 4;
+  }
+  
+  /* Consistent button design on hover and active states */
+  .control-button:hover,
+  .control-button:active {
+    background-color: transparent;
+    border: none; /* Ensure no border on hover/active */
+    outline: none; /* Remove any outline */
+  }
+  
